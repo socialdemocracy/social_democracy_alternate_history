@@ -92,17 +92,6 @@ header h2:before {
   padding: 0 0.3em 0 0;
 }
 
-.button-image {
-    vertical-align:-0.25em;
-}
-
-.icon-button {
-    padding-top: 0.5em;
-    padding-bottom: 0.25em;
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-}
-
 #content #read-marker {
   border: none;
   border-top: 1px solid var(--border-color);
@@ -182,7 +171,6 @@ blockquote + blockquote.attribution {
 /* This is mostly copied from undum. */
 #mid_panel {
   margin: 0 16rem;
-  margin-right: 13.5em;
 }
 #page {
   margin: 0 auto;
@@ -198,7 +186,7 @@ blockquote + blockquote.attribution {
 }
 .tools {
   padding: 0.6em;
-  width: 14.5rem;
+  width: 14rem;
   color: var(--text-color);
   background-color: var(--content-bg-color);
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -266,14 +254,8 @@ blockquote + blockquote.attribution {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
     overflow: scroll;
-}
-.options h3 {
-    text-align: center;
-}
-.music_player {
-    text-align: left;
 }
 .options {
     text-align: right;
@@ -554,45 +536,131 @@ table {
     border-spacing: 0.5em;
 }
 
-/* Styles for parties */
-.seat.kpd {
-    fill: #8B0000;
+/* Styles for parties
+ * Colors come from frwiki */
+:root {
+    --pcf: #bb0000;
+    --sfio: #E9383F;
+    --prrrs: #FFABAB;
+    --usr: #FF5E4D;
+    --pdp: #00FFFF;
+    --ard: #a5c1df;
+    --fr: #24445c;
+    --psop: #dd0000; 
+    --ppf: #002654;
+    --psf: #000;
 }
-.seat.spd {
-    fill: #E3000F;
+.seat.pcf {
+    fill: var(--pcf);
+}
+.seat.sfio {
+    fill: var(--sfio);
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
-.seat.ddp {
-    fill: #DCCA4A;
+.seat.prrrs {
+    fill: var(--prrrs);
 }
-.seat.z {
-    fill: #000;
+.seat.usr {
+    fill: var(--usr);
 }
-.seat.bvp {
-    fill: #69A2BE;
+.seat.pdp {
+    fill: var(--pdp);
 }
-.seat.dvp {
-    fill: #D5AC27;
+.seat.ard {
+    fill: var(--ard);
 }
-.seat.other {
-    fill: #909090;
+.seat.fr {
+    fill: var(--fr);
 }
-.seat.dnvp {
-    fill: #3F7BC1;
+.seat.ppf {
+    fill: var(--ppf);
 }
-.seat.nsdap {
-    fill: #954B00;
+.seat.psf {
+    fill: var(--psf);
 }
-.seat.sapd {
-    fill: #C40000;
+.seat.psop {
+    fill: var(--psop);
 }
-/* Giving them NDP colors, idk */
-.seat.srpd {
-    fill: #F4A460;
+
+.box.pcf {
+    background-color: var(--pcf);
+}
+.box.sfio {
+    background-color: var(--sfio);
+    outline: 2px;
+    outline-style: solid;
+}
+.box.prrrs {
+    background-color: var(--prrrs);
+}
+.box.usr {
+    background-color: var(--usr);
+}
+.box.pdp {
+    background-color: var(--pdp);
+}
+.box.ard {
+    background-color: var(--ard);
+}
+.box.fr {
+    background-color: var(--fr);
+}
+.box.ppf {
+    background-color: var(--ppf);
+}
+.box.psf {
+    background-color: var(--psf);
+}
+.box.psop {
+    background-color: var(--psop);
+}
+
+span.pcf {
+    font-weight: bold;
+    color: var(--pcf);
+}
+span.sfio {
+    font-weight: bold;
+    color: var(--sfio);
+}
+span.prrrs {
+    font-weight: bold;
+    color: #cc5656
+    /*color: var(--prrrs);*/
+}
+span.usr {
+    font-weight: bold;
+    color: var(--usr);
+}
+span.pdp {
+    font-weight: bold;
+    /* Making the color slightly darker to be easier to read. */
+    color: #00aaaa;
+}
+span.ard {
+    font-weight: bold;
+    color: var(--ard);
+}
+span.fr {
+    font-weight: bold;
+    color: var(--fr);
+}
+span.ppf {
+    font-weight: bold;
+    color: var(--ppf);
+}
+span.psf {
+    font-weight: bold;
+    color: var(--psf);
+}
+span.psop {
+    font-weight: bold;
+    color: var(--psop);
 }
 
 .tooltip-text {
     text-decoration: underline;
     text-decoration-style: dotted;
 }
+
